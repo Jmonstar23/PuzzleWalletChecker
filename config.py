@@ -25,10 +25,13 @@ TIMEOUT_SECONDS = 30  # request timeout
 # Proxy settings
 PROXY_CERT = "/Users/macbook/python/charles-ssl-proxying-certificate.pem"
 PROXY_CONFIG = {
-    "http": "http://127.0.0.1:8888",
     "https": "http://127.0.0.1:8888"
+#    "http": "http://127.0.0.1:8888",
 }
+# Uncomment http PROXY_CONFIG if wish to use, move comma from http up to https
 # If not using proxy, you can set PROXY_CONFIG = None
+# PROXY_CONFIG = None
+
   
 # Database file
 DB_FILE = "progress.db"
