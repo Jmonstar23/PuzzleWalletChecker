@@ -4,10 +4,9 @@
 """
 # config.py
 
+from local_config import PREFIX, FREE_WORDS, GROUP2_WORDS, PROXY_CERT
+
 # Fixed prefix words, free words, etc.
-PREFIX = ["head", "honey", "bitter", "find", "sock", "dash"]
-FREE_WORDS = ["bridge", "current", "tail", "bottom", "matter", "like", "arrive", "addict", "fish", "inch"]
-GROUP2_WORDS = ["segway", "allcoins", "crypto", "website", "breath", "fight", "passenger", "gimmick"]
 TOTAL_WORDS = 24
 FIRST_BLOCK_COUNT = 6
 
@@ -23,7 +22,6 @@ REQUEST_PAUSE_SECONDS = 2
 TIMEOUT_SECONDS = 30  # request timeout
 
 # Proxy settings
-PROXY_CERT = "/Users/macbook/python/charles-ssl-proxying-certificate.pem"
 PROXY_CONFIG = {
     "https": "http://127.0.0.1:8888"
 #    "http": "http://127.0.0.1:8888",
